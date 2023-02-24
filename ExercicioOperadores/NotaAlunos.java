@@ -11,10 +11,23 @@ public class NotaAlunos {
         int nota2 = sc.nextInt();
         System.out.println("Informe a Frequênciado Aluno");
         int freq = sc.nextInt();
-        double média = (nota1+nota2)/2;
-        System.out.println("Média do aluno é:" +média);
-        boolean 
+        double media = (nota1+nota2)/2;
+        System.out.println("Média do aluno é:" +media);
+        boolean aprovadoMedia = media >= 50;
+        System.out.println("Média acima de 50? " +aprovadoMedia);
+        boolean aprovadoFreq = freq >= 75;
+        System.out.println("Frequência do aluno igual ou maior 75? " +aprovadoFreq);
+        boolean aprovado = aprovadoFreq && aprovadoMedia;
+        System.out.println("Aluno foi arpovado? " +aprovado);
+        if (aprovado==true) {
 
+            System.out.println("Boa lk");
+
+            if(aprovado==false);
+            
+        } else {
+            
+        }
     }
 
 }
