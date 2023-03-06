@@ -15,9 +15,13 @@ public class App {
         //objeto4.exercicio4();//
 
         Exercicio objeto5=new Exercicio();
-        objeto4.exercicio5();
+        //objeto5.exercicio5();//
 
         Exercicio objeto6=new Exercicio();
-        objeto4.exercicio6();
+        //objeto6.exercicio6();//
+
+        Exercicio objeto7=new Exercicio();
+        objeto7.exercicio7();
+
     }
 }

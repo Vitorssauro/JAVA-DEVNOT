@@ -71,11 +71,51 @@ public class Exercicio {
         int b = sc.nextInt();
         System.out.println("Digite o valor 3:");
         int c = sc.nextInt();
-        if (a>b && b>c) { System.out.println("o resultado vai ser: "+a+b+c);
-        } else if(a>c && c>b){ System.out.println("o resultado vai ser: "+a+c+b);   
+        if (a < b && b < c) {
+            System.out.println("o resultado vai ser: " + a + "-" + b + "-" + c);
+        } else if (a < c && c < b) {
+            System.out.println("o resultado vai ser: " + a + "-" + c + "-" + b);
+        } else if (b < a && a < c) {
+            System.out.println("o resultado vai ser: " + b + "-" + a + "-" + c);
+        } else if (b < c && c < a) {
+            System.out.println("o resultado vai ser: " + b + "-" + c + "-" + a);
+        } else if (c < a && a < c) {
+            System.out.println("o resultado vai ser: " + c + "-" + a + "-" + b);
+        } else {
+            System.out.println("o resultado vai ser: " + c + "-" + b + "-" + a);
         }
     }
+
+    /** EXERCÍCIO 6 */
+
     public void exercicio6() {
+        System.out.println("Informe sua altura:");
+        double altura = sc.nextDouble();
+        System.out.println("Informe informe seu sexo: 1 = Feminino 2 = Masculino");
+        double sexo = sc.nextDouble();
+        double peso = 0.0;
+        if (sexo==1) { peso = (72.7*altura)-58;
+        } else { peso = (62.1*altura) - 44.7;
+        }
+        System.out.println("Seu peso ideal é de: "+peso+"Kg");
+            }
+
+        /** EXERCÍCIO 7 */
+    
+    public void exercicio7() {
+        System.out.println("Informe a Nota 1 do Aluno");
+        int nota1 = sc.nextInt();
+        System.out.println("Informe a Nota 2 do Aluno");
+        int nota2 = sc.nextInt();
+        System.out.println("Informe a Frequênciado Aluno");
+        int freq = sc.nextInt();
+        double media = (nota1+nota2)/2;
+        System.out.println("Média do aluno é:" +media);
+        if (media >= 50 && freq >= 75) { System.out.println("Alno está APROVADO!!!");
+            
+        } else { System.out.println("Aluno está REPROVADO...");
         
+            
+        }
     }
 }
