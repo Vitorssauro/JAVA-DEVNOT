@@ -51,14 +51,14 @@ public class Exercicio {
 
     public void exercicio4() {
         System.out.println("Quantas maças você vai comprar?...");
-        double maças = sc.nextDouble();
-        double valor = 0;
-        if (maças < 12) {
+        int macas = sc.nextInt();
+        double valor;
+        if (macas < 12) {
             valor = 0.30;
         } else {
             valor = 0.25;
         }
-        double custo = maças * valor;
+        double custo = macas * valor;
         System.out.println("Você irá pagar:" + custo);
     }
 
@@ -72,17 +72,17 @@ public class Exercicio {
         System.out.println("Digite o valor 3:");
         int c = sc.nextInt();
         if (a < b && b < c) {
-            System.out.println("o resultado vai ser: " + a + "-" + b + "-" + c);
+            System.out.println("A Ordem crescent é: " + a + "-" + b + "-" + c);
         } else if (a < c && c < b) {
-            System.out.println("o resultado vai ser: " + a + "-" + c + "-" + b);
+            System.out.println("A Ordem crescent é: " + a + "-" + c + "-" + b);
         } else if (b < a && a < c) {
-            System.out.println("o resultado vai ser: " + b + "-" + a + "-" + c);
+            System.out.println("A Ordem crescent é: " + b + "-" + a + "-" + c);
         } else if (b < c && c < a) {
-            System.out.println("o resultado vai ser: " + b + "-" + c + "-" + a);
-        } else if (c < a && a < c) {
-            System.out.println("o resultado vai ser: " + c + "-" + a + "-" + b);
+            System.out.println("A Ordem crescent é: " + b + "-" + c + "-" + a);
+        } else if (c < a && a < b) {
+            System.out.println("A Ordem crescent é: " + c + "-" + a + "-" + b);
         } else {
-            System.out.println("o resultado vai ser: " + c + "-" + b + "-" + a);
+            System.out.println("A Ordem crescent é: " + c + "-" + b + "-" + a);
         }
     }
 
