@@ -11,7 +11,7 @@ public class While {
             // Aleatórios de 0 até 9
             int numeroAleatorio = random.nextInt(10);
             boolean tentarNovamente = true;
-            System.out.println("Aperte CTRL+C, a qualquer momento, paraparar.");
+            System.out.println("Aperte CTRL+C, a qualquer momento, para parar.");
             // Enquanto tentarNovamente igual a true, itera novamente.
             while (tentarNovamente) {
                 System.out.print("Tente adivinhar o número: ");
@@ -24,7 +24,7 @@ public class While {
                     System.out.println("Errado!");
                 }
             }
-            System.out.println("Parabéns! Você adivinhou. Era o número"
+            System.out.println("Parabéns! Você adivinhou. Era o número "
                     + numeroAleatorio + " mesmo.");
         }
         System.out.println("Fim!");
