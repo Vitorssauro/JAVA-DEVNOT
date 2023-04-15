@@ -9,7 +9,7 @@ public class exerciciosWhile {
             vetorB[i] = vetorA[i];
             System.out.println("VetorB[" + i + "]=" + vetorB[i]);
             i++;
-        }
+        } 
     }
 
     public void exe2() {
