@@ -71,7 +71,7 @@ public class Exercicios {
                 System.out.println("Tenta de novo :(");
                 palpite = sc.nextInt();
             }
-            System.out.println("CERTÔ :)! Você acertou na "+tentativa+"º tentativa" );
+            System.out.println("CERTÔ :)! Você acertou na "+(tentativa+1)+"º tentativa" );
 
         } else {
             System.out.println("CERTÔ DE PRIMEIRA MALUCO!! O_O");
@@ -81,10 +81,11 @@ public class Exercicios {
     public void ex3() {
         int contPar = 0;
         int contImpar = 0;
-        int tamanho = rd.nextInt(900)+101;
+        int tamanho = rd.nextInt(901)+100;
+
         int vetor[] = new int[tamanho];
         for (int i = 0; i < vetor.length; i++) {        //Preencher
-            vetor [i] = rd.nextInt(99)+1;
+            vetor [i] = rd.nextInt(100)+1;
             System.err.println("["+i+"] = "+vetor[i]);
         }
 
