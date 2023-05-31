@@ -69,8 +69,6 @@ public class Trapezio implements FigurasGeometricas {
     @Override
     public double getPerimetro() {
         int perimetro = lado1+lado2+baseMaior+baseMenor;
-        return perimetro;
+        return perimetro;                                                                                                                                                                                         
     }
-
-    
 }
