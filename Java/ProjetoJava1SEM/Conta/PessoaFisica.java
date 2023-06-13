@@ -26,6 +26,12 @@ public class PessoaFisica extends Conta {
         nome = sc.nextLine();
         System.out.println("Informe seu CPF:");
         cpf = sc.nextLine();
+        System.out.println("Bem-Vindo(a)" +nome+"\nCPF: "+cpf );
         
     }
+
+    public double verificar() {
+        return saldo;
+    }
+
 }

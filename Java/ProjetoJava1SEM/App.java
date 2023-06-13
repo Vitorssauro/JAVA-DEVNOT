@@ -16,7 +16,7 @@ public class App {
 
       while (cadastro) {
 
-         //inicio do cadastro
+         // inicio do cadastro
 
          System.out.println(
                "*Criação de conta*\nSelecione o tipo de conta:\n1 - Pessoa Física\n2 - Pessoa Jurídica\n3 - Cancelar");
@@ -37,33 +37,48 @@ public class App {
          }
 
       }
+
       // pessoa fisica cadastrada
       while (fisico) {
-         
-      
-      switch () {
-         case value:
-            
-            break;
-      
-         default:
-            break;
-      }
+
+         System.out.println("\nMenu de ações\n1 - verificar saldo\n2 - Saque\n3 - Depósito\n4 - Empréstimo\n5 - Sair");
+         int acao = sc.nextInt();
+
+         switch (acao) {
+            case 1:
+               System.out.println("Seu saldo é de: " + pessoa1.verificar());
+               break;
+            case 2:
+
+               break;
+            case 3:
+
+               break;
+            case 4:
+
+               break;
+            case 5:
+               fisico = false;
+               break;
+
+            default:
+               break;
+         }
       }
 
-      //pessoa jurídica cadastrada
-
-      
+      // pessoa jurídica cadastrada
 
       while (juridico) {
-         
-      
-      switch () {
-         case value:
-            
-            break;
-      
-         default:
-            break;
+         int acao = sc.nextInt();
+
+         switch (acao) {
+            case 1:
+
+               break;
+
+            default:
+               break;
+         }
+      }
    }
 }
