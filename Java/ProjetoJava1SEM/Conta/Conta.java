@@ -1,6 +1,12 @@
-package ProjetoJava1SEM;
+package ProjetoJava1SEM.Conta;
+
+import java.util.Random;
+import java.util.Scanner;
 
 public class Conta {
+
+    Scanner sc = new Scanner(System.in);
+    Random rd = new Random();
 
     // atributos
     String nome;
@@ -24,4 +30,6 @@ public class Conta {
         this.saldo = saldo;
     }
 
+    // métodos próprios
+    // cadastro
 }
