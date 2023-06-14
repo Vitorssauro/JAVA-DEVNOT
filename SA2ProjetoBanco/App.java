@@ -30,8 +30,8 @@ public class App {
 
             while (juridico) {
                 int acao = Integer.parseInt(JOptionPane.showInputDialog("Informe a ação desejada"
-                        + "\n 1-Abrir Conta"
-                        + "\n 2-Acessar Conta"
+                        + "\n 1-Abrir Conta PJ"
+                        + "\n 2-Acessar Conta PJ"
                         + "\n 3-Sair"));
                 if (acao == 1) {// abrir conta
                     // criar um objeto
@@ -42,7 +42,9 @@ public class App {
                     clientePJ[contPJ].setnConta(2000 + contPJ);
                     clientePJ[contPJ].setSaldo(0);
                     // acrescimo no contador __ Para dar numeração as contas.
-                    JOptionPane.showMessageDialog(null, "Conta Criada com Sucesso");
+                    JOptionPane.showMessageDialog(null, "Conta Criada com Sucesso"
+                    +"\n Nome: "+clientePF[contPF].getNome()
+                    +"\n Nº da conta: "+clientePF[contPF].getnConta());
                     contPJ++;
                 } else if (acao == 2) { // acessar uma conta já criada
                     // localizar a conta no vetor
@@ -88,8 +90,8 @@ public class App {
             while (fisico) {
 
                 int acao = Integer.parseInt(JOptionPane.showInputDialog("Informe a ação desejada"
-                        + "\n 1-Abrir Conta"
-                        + "\n 2-Acessar Conta"
+                        + "\n 1-Abrir Conta PF"
+                        + "\n 2-Acessar Conta PF"
                         + "\n 3-Sair"));
                 if (acao == 1) {// abrir conta
                     // criar um objeto

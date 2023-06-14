@@ -3,8 +3,6 @@ package AtividadeFormativa1905;
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.lang.model.util.Elements.Origin;
-
 public class Exercicios {
     Random rd = new Random();
     Scanner sc = new Scanner(System.in);
