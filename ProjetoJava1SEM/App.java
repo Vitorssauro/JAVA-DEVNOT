@@ -2,7 +2,6 @@ package ProjetoJava1SEM;
 
 import java.util.Scanner;
 
-import ProjetoJava1SEM.Conta.Conta;
 import ProjetoJava1SEM.Conta.PessoaFisica;
 
 public class App {
