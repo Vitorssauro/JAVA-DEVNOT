@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 public class ContaPJ extends Conta {
     // atributos
+    boolean aceito = true; //apenas pro empréstimo
     String nCnpj;
     // métodos
     // construtor vazio(default)
@@ -19,11 +20,12 @@ public class ContaPJ extends Conta {
     public void emprestimoPJ() {
         double emprestimo = Integer.parseInt(JOptionPane.showInputDialog("Informe o valor do Empréstimo"));
 
-        if (emprestimo <= 10000) {
+        if (aceito && emprestimo <= 10000 && saldo > 0 && emprestimo >= 1000) {
             JOptionPane.showMessageDialog(null, "Empréstimo realizado com sucesso!");
             saldo += emprestimo;
+            aceito = false;
         } else {
-            JOptionPane.showMessageDialog(null, "Valor inválido!!\nEmpréstimo maximo de R$10.000,00");
+            JOptionPane.showMessageDialog(null, "Seu empréstimo foi Negado");
         }
     }
 }

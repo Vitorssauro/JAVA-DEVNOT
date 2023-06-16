@@ -32,7 +32,7 @@ public class App {
                 int acao = Integer.parseInt(JOptionPane.showInputDialog("Informe a ação desejada"
                         + "\n 1-Abrir Conta PJ"
                         + "\n 2-Acessar Conta PJ"
-                        + "\n 3-Sair"));
+                        + "\n 3-Voltar"));
                 if (acao == 1) {// abrir conta
                     // criar um objeto
                     clientePJ[contPJ] = new ContaPJ(); // chamei o construtor (default)
@@ -43,8 +43,9 @@ public class App {
                     clientePJ[contPJ].setSaldo(0);
                     // acrescimo no contador __ Para dar numeração as contas.
                     JOptionPane.showMessageDialog(null, "Conta Criada com Sucesso"
-                    +"\n Nome: "+clientePF[contPF].getNome()
-                    +"\n Nº da conta: "+clientePF[contPF].getnConta());
+                            + "\n - Nome da Empresa: " + clientePJ[contPJ].getNome()
+                            + "\n - CNPJ: " + clientePJ[contPJ].getnCnpj()
+                            + "\n - Nº da conta: " + clientePJ[contPJ].getnConta());
                     contPJ++;
                 } else if (acao == 2) { // acessar uma conta já criada
                     // localizar a conta no vetor
@@ -82,6 +83,10 @@ public class App {
                             acesso = false;
                         }
                     }
+                } else if (acao == 3) {
+                    juridico = false;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Ação inválida!!");
                 }
             }
 
@@ -92,7 +97,7 @@ public class App {
                 int acao = Integer.parseInt(JOptionPane.showInputDialog("Informe a ação desejada"
                         + "\n 1-Abrir Conta PF"
                         + "\n 2-Acessar Conta PF"
-                        + "\n 3-Sair"));
+                        + "\n 3-Voltar"));
                 if (acao == 1) {// abrir conta
                     // criar um objeto
                     clientePF[contPF] = new ContaPF(); // chamei o construtor (default)
@@ -103,8 +108,9 @@ public class App {
                     clientePF[contPF].setSaldo(0);
                     // acrescimo no contador __ Para dar numeração as contas.
                     JOptionPane.showMessageDialog(null, "Conta Criada com Sucesso"
-                    +"\n Nome: "+clientePF[contPF].getNome()
-                    +"\n Nº da conta: "+clientePF[contPF].getnConta());
+                            + "\n - Nome: " + clientePF[contPF].getNome()
+                            + "\n - CPF: " + clientePF[contPF].getCpf()
+                            + "\n - Nº da conta: " + clientePF[contPF].getnConta());
                     contPF++;
                 } else if (acao == 2) { // acessar uma conta já criada
                     // localizar a conta no vetor
@@ -142,6 +148,10 @@ public class App {
                             acesso = false;
                         }
                     }
+                } else if (acao == 3) {
+                    fisico = false;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Ação inválida!!");
                 }
             }
         }
